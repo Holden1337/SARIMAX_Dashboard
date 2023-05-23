@@ -41,7 +41,7 @@ app.layout = html.Div(
                             children=[
                                 html.A(
                                     "Seasonal Autoregressive Integrated Moving Average (SARIMAX) Explorer",
-                                    href="https://github.com/plotly/dash-svm",
+                                    href="https://github.com/Holden1337/SARIMAX_Dashboard",
                                     style={
                                         "text-decoration": "none",
                                         "color": "inherit",
