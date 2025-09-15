@@ -212,7 +212,7 @@ def update_ARIMA_graph(
     rmse = sqrt(mean_squared_error(test, preds))
     figure = create_figure(train, test, preds)
     figure.layout.paper_bgcolor = "#282b38"
-    figure.layout.width = 1200
+    figure.layout.width = 1000
     figure.layout.height = 600
     figure.update_layout(
         plot_bgcolor='#282b38',
@@ -236,4 +236,4 @@ def update_ARIMA_graph(
 
 # Running the server
 if __name__ == "__main__":
-    app.run_server(debug=True)
+    app.run(debug=False, port=8050, host='0.0.0.0')
